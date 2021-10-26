@@ -69,7 +69,6 @@ social-network-links:
 
 # --- General options --- #
 
-theme: minima
 # Select which social network share links to show in posts
 share-links-active:
  # twitter: true
