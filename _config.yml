@@ -6,29 +6,19 @@
 # --- Required options --- #
 
 # Name of website
-title: My website
-
-# Short description of your site
-description: A virtual proof that I'm awesome
-
-# GitHub Actions
-repository: "VincentTam/beautiful-jekyll"
-
-# --- Local development options ---
-# If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
-# *** If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
+title: Dr Ioanna Papatsouma
 
 # Your name to show in the footer
-author: Some Person
+author: Dr Ioanna Papatsouma
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    - Department of Mathematics: "https://www.imperial.ac.uk/mathematics"
+    - Statistics seminars: "https://www.imperial.ac.uk/statistics/seminars/statistics-seminar/"
+    - StatML: "https://statml.io"
 
 # --- Logo --- #
 
@@ -43,20 +33,21 @@ round-avatar: true
 # then specify the following parameter
 #title-img: /path/to/image
 
-
 # --- Footer social media links --- #
 
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
+  email: "i.papatsouma@imperial.ac.uk"
+  # rss: true  # remove this line if you don't want to show an RSS link at the bottom
+  # facebook: deanattali
+  # github: daattali
+  # twitter: daattali
+  # patreon: DeanAttali
+  # youtube: c/daattali
+#  medium: yourname
 #  reddit: yourname
-#  linkedin: daattali
+  linkedin: https://www.linkedin.com/in/ioanna-papatsouma/
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -72,22 +63,22 @@ social-network-links:
 #  ORCID: your ORCID ID
 #  google-scholar: your google scholar
 
-# If you want to show a link to an RSS in the footer, add the site description here.
-# If you don't want to show an RSS link, remove the following line.
-rss-description: This website is a virtual proof that I'm awesome
+# If you want your website to generate an RSS feed, provide a description
+# The URL for the feed will be https://<your_website>/feed.xml
+#rss-description: This website is a virtual proof that I'm awesome
 
 # --- General options --- #
 
 # Select which social network share links to show in posts
 share-links-active:
-  twitter: true
-  facebook: true
+ # twitter: true
+ # facebook: true
   linkedin: true
-  vk: false
+ # vk: false
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "https://ioannapapa.github.io/ipapatsouma.github.io/"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
@@ -97,6 +88,9 @@ feed_show_excerpt: true
 
 # Whether or not to show a list of tags below each post preview in the feed page
 feed_show_tags: true
+
+# Add a search button to the navbar
+post_search: true
 
 # The keywords to associate with your website, for SEO purposes
 #keywords: "my,list,of,keywords"
@@ -115,6 +109,7 @@ hover-col: "#0085A1"
 footer-col: "#EAEAEA"
 footer-text-col: "#777777"
 footer-link-col: "#404040"
+footer-hover-col: "#0085A1"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
@@ -141,6 +136,9 @@ footer-link-col: "#404040"
 
 # Fill in your Google Analytics ID to track your website using Google Analytics
 #google_analytics: ""
+
+# Fill in your Cloudflare Analytics beacon token to track your website using Cloudflare Analytics
+#cloudflare_analytics: ""
 
 # Google Tag Manager ID
 #gtm: ""
@@ -184,6 +182,22 @@ staticman:
 #  reCaptcha:   # (optional, set these parameters in `staticman.yml` as well) 
 #    siteKey  : # You need to apply for a site key on Google
 #    secret   : # Encrypt your password by going to https://<your-own-api>/v3/encrypt/<your-site-secret>
+
+# To use giscus comments:
+# (0) Uncomment the following giscus section, (1) Enable Discussions in your GitHub repository, 
+# (2) Install the giscus app in your repository (details at https://giscus.app),
+# (3) Fill in *all* the parameters below 
+# See more details about giscus and each of the following parameters at https://giscus.app
+#giscus:
+#  hostname: giscus.app # Replace with your giscus instance's hostname if self-hosting
+#  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
+#  repository-id: # ID of your repository, retrieve this info from https://giscus.app
+#  category: Announcements # Category name of your GitHub Discussion posts
+#  category-id: # ID of your category, retrieve this info from https://giscus.app
+#  mapping: pathname
+#  reactions-enabled: 1
+#  emit-metadata: 0
+#  theme: light
 
 # --- Misc --- #
 
@@ -240,5 +254,3 @@ remote_theme: daattali/beautiful-jekyll@5.0.0
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
-
-theme: jekyll-theme-cayman
