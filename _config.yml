@@ -15,7 +15,8 @@ author: Dr Ioanna Papatsouma
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
+  Teaching: "teaching"
+  Links:
     - Department of Mathematics: "https://www.imperial.ac.uk/mathematics"
     - Statistics seminars: "https://www.imperial.ac.uk/statistics/seminars/statistics-seminar/"
     - StatML: "https://statml.io"
